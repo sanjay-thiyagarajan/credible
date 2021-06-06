@@ -1,0 +1,10 @@
+credible/__pycache__
+twitter/__pycache__
+twitter/migrations
+reviews/__pycache__
+reviews/migrations
+personality/__pycache__
+personality/migrations
+bin
+lib
+pyvenv.cfg
