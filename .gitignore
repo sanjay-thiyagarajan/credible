@@ -5,6 +5,8 @@ reviews/__pycache__
 reviews/migrations
 personality/__pycache__
 personality/migrations
+dashboard/__pycache__
+dashboard/migrations
 credible/settings/__pycache__
 bin
 lib
