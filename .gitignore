@@ -5,6 +5,7 @@ reviews/__pycache__
 reviews/migrations
 personality/__pycache__
 personality/migrations
+credible/settings/__pycache__
 bin
 lib
 pyvenv.cfg
