@@ -1,1 +1,1 @@
-a
+ web: gunicorn credible.wsgi
