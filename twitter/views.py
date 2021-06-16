@@ -15,7 +15,7 @@ def analysis(request):
                 else:
                     return render(request, 'twitter/tweet-results.html', {'bt_div':bt_div, 'em_div':em_div})
             except tweepy.TweepError as e:
-                return render(request, 'twitter/tweet-results.html', {'error': 'Sorry :( We don\'t have enough information to run the prediction for this username'})        
+                return render(request, 'twitter/tweet-results.html', {'error': 'Sorry :( The provided username doesn\'t exist. Please check and reach back'})        
                 
     return render(request, 'twitter/tweet-analysis.html')
 
