@@ -23,24 +23,28 @@
     <div class="card" style="margin-left: 10%; margin-right:10%; margin-top: 5%; margin-bottom: 5%;border-radius: 13px;">
         <div class="card-body" style="padding: 5%;">
             <h4 class="card-title" style="color: rgb(145,142,142);text-align: center;font-size: 180%;font-weight: bold;">analysis report</h4>
-            <div>
-                <div class="card" style="float:left;width: auto;margin-top: 5%;border-radius: 9px;border-color: var(--bs-red);">
-                    <div class="card-body" style="text-align: center;">
-                        <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">BEHAVIORAL TRAITS</h4>
-                        {% autoescape off %}
-                        {{bt_div}}
-                        {% endautoescape %}
+            {% if error %}
+                <p style="color: red; font-weight: bold; border-style: solid; padding: 2%; margin-top: 3%; border-width: 1px; border-radius: 6px;">{{error}}</p>
+            {% elif bt_div %}
+                <div>
+                    <div class="card" style="float:left;width: auto;margin-top: 5%;border-radius: 9px;border-color: var(--bs-red);">
+                        <div class="card-body" style="text-align: center;">
+                            <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">BEHAVIORAL TRAITS</h4>
+                            {% autoescape off %}
+                            {{bt_div}}
+                            {% endautoescape %}
+                        </div>
+                    </div>
+                    <div class="card" style="float:right;width: auto;margin-top: 5%;border-radius: 10px;border-width: 1px;border-color: var(--bs-primary);">
+                        <div class="card-body" style="text-align: center;">
+                            <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">EMOTIONAL TRAITS</h4>
+                            {% autoescape off %}
+                                {{em_div}}
+                            {% endautoescape %}
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="float:right;width: auto;margin-top: 5%;border-radius: 10px;border-width: 1px;border-color: var(--bs-primary);">
-                    <div class="card-body" style="text-align: center;">
-                        <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">EMOTIONAL TRAITS</h4>
-                        {% autoescape off %}
-                            {{em_div}}
-                        {% endautoescape %}
-                    </div>
-                </div>
-            </div>
+            {% endif %}
         </div>
     </div>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
