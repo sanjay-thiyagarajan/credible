@@ -81,7 +81,6 @@ def findusertweets(user_name):
     tweet_analyzer = TweetAnalyzer()
     df = tweet_analyzer.tweets_to_data_frame(tweets)
     df['sentiment'] = np.array([tweet_analyzer.analyze_sentiment(tweet) for tweet in df['tweets']])
-    df.to_csv(user_name+'_tweets.csv')
     tweets_list = df['tweets']
     summarized_tweet = '. '.join(tweets_list)
     client = ExpertAiClient()
