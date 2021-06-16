@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Credible</title>
+    <meta name="description" content="AI powered sentiment analysis">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body style="background: var(--bs-cyan);">
+    <nav class="navbar navbar-light navbar-expand-md" style="background: #ffffff;height: 10%;">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-weight: bold;color: rgba(82,78,78,0.9);font-family: Cabin, sans-serif;font-size: 160%;">Tweet Analysis</a><button class="navbar-toggler" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+    </nav>
+
+    <div class="card" style="margin-left: 10%; margin-right:10%; margin-top: 5%; margin-bottom: 5%;border-radius: 13px;">
+        <div class="card-body" style="padding: 5%;">
+            <h4 class="card-title" style="color: rgb(145,142,142);text-align: center;font-size: 180%;font-weight: bold;">analysis report</h4>
+            <div>
+                <div class="card" style="float:left;width: auto;margin-top: 5%;border-radius: 9px;border-color: var(--bs-red);">
+                    <div class="card-body" style="text-align: center;">
+                        <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">BEHAVIORAL TRAITS</h4>
+                        {% autoescape off %}
+                        {{bt_div}}
+                        {% endautoescape %}
+                    </div>
+                </div>
+                <div class="card" style="float:right;width: auto;margin-top: 5%;border-radius: 10px;border-width: 1px;border-color: var(--bs-primary);">
+                    <div class="card-body" style="text-align: center;">
+                        <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">EMOTIONAL TRAITS</h4>
+                        {% autoescape off %}
+                            {{em_div}}
+                        {% endautoescape %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/script.min.js' %}"></script>
+    
+</body>
+
+</html>
