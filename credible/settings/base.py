@@ -26,11 +26,7 @@ STATICFILES_DIRS = [
 
 ALLOWED_HOSTS = ['*']
 
-CORS_ORIGIN_WHITELIST = [
-     'https://credible-ai.herokuapp.com/',
-     '127.0.0.1'
-]
-
+CORS_ORIGIN_ALLOW_ALL=True
 
 # Application definition
 
@@ -45,13 +41,20 @@ INSTALLED_APPS = [
     'personality',
     'reviews',
     'twitter',
-    'storages'
+    'storages',
+    'corsheaders'
 ]
 
+CORS_ORIGIN_WHITELIST = [
+    'http://127.0.0.1:8000',
+    'https://credible-bucket-1.s3.amazonaws.com'
+    ]
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
