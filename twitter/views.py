@@ -1,4 +1,4 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 from twitter.utils.twitter_sentiment_analysis import findusertweets, pie_chart
 import tweepy
 

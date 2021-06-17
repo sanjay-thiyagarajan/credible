@@ -21,10 +21,6 @@ class TwitterCredentials():
     self.oauth_token="1292034807057149952-3Mlqa59ZAoqRdACgnW6z4goXUy3vUs" 
     self.oauth_token_secret="ZZlu7jF3mymeapDxwj19MkqCYF3osQjp48xYEuIL4wRM1"
 
-import os
-os.environ["EAI_USERNAME"] = 'nk2indian@gmail.com'
-os.environ["EAI_PASSWORD"] = 'Nareshnk2#'
-
 class TwitterAuthenticator():
 
     def authenticate_twitter_app(self):

@@ -7,6 +7,8 @@ personality/__pycache__
 personality/migrations
 dashboard/__pycache__
 dashboard/migrations
+resume/__pycache__
+resume/migrations
 credible/settings/__pycache__
 bin
 lib
