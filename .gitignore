@@ -11,6 +11,7 @@ resume/__pycache__
 resume/migrations
 credible/settings/__pycache__
 share
+etc
 bin
 lib
 pyvenv.cfg
