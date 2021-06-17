@@ -10,6 +10,7 @@ dashboard/migrations
 resume/__pycache__
 resume/migrations
 credible/settings/__pycache__
+share
 bin
 lib
 pyvenv.cfg
