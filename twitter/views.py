@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from twitter.utils.twitter_sentiment_analysis import findusertweets, pie_chart
+from twitter.utils.twitter_sentiment_analysis import findusertweets, pie_chart, no_of_tweets_graph, highest_likes_on_a_day
 import tweepy
 
 def analysis(request):
@@ -7,7 +7,8 @@ def analysis(request):
         username = request.POST.get('username')
         if username != '':
             try:
-                summary = findusertweets(user_name=username)
+                df = findusertweets(user_name=username)
+                summary = '. '.join(df['tweets'])
                 bt_div, bt_status = pie_chart('behavioral-traits', summary)
                 em_div, em_status = pie_chart('emotional-traits', summary)
                 if bt_status == 'ERROR' or em_status == 'ERROR':
