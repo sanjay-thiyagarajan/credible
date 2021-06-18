@@ -77,19 +77,24 @@
                         </div>
                     </div>
                     <div class="table-responsive table mt-2" id="dataTable" style="border-style:solid; margin-bottom: 2%;" role="grid" aria-describedby="dataTable_info" style="margin-top: 1%">
-                                <table class="table my-0" id="dataTable">
+                                <style>
+                                td {
+                                    padding: 2%;
+                                }
+                                </style>
+                                <table class="table my-0" id="dataTable" padding="1%">
                                     <thead>
                                         <tr>
-                                            <th>Label</th>
-                                            <th>Path</th>
-                                            <th>Frequency</th>
+                                            <th style="padding: 10px;">Label</th>
+                                            <th style="padding: 10px;">Path</th>
+                                            <th style="padding: 10px;">Frequency</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {% for key, val in bt_dict.items %}
                                             <tr>
                                             {% for v in val %}
-                                            <td>{{v}}</td>
+                                            <td style="padding: 10px;">{{v}}</td>
                                             {% endfor %}
                                             </tr>
                                         {% endfor %}
