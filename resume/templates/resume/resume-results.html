@@ -17,7 +17,7 @@
 
 <body style="background: #32373d;">
     <nav class="navbar navbar-light navbar-expand-md" style="background: #ffffff;height: 10%;">
-        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-weight: bold;color: rgba(82,78,78,0.9);font-family: Cabin, sans-serif;font-size: 160%;">Tweet Analysis</a><button class="navbar-toggler" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-weight: bold;color: rgba(82,78,78,0.9);font-family: Cabin, sans-serif;font-size: 160%;">Resume Analysis</a><button class="navbar-toggler" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
     </nav>
 
     <div class="card" style="margin-left: 10%; margin-right:10%; margin-top: 5%; margin-bottom: 5%;border-radius: 13px;">
@@ -27,7 +27,7 @@
                 <p style="color: red; font-weight: bold; border-style: solid; padding: 2%; margin-top: 3%; border-width: 1px; border-radius: 6px;">{{error}}</p>
             {% elif bt_div %}
                 <div>
-                    <div class="card" style="float:left;width: auto;margin-top: 5%;border-radius: 9px;border-color: var(--bs-red);">
+                    <div class="card" style="float:left;width: 50%;margin-top: 5%;border-radius: 9px;border-color: var(--bs-red);">
                         <div class="card-body" style="text-align: center;">
                             <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">IPTC</h4>
                             {% autoescape off %}
@@ -35,7 +35,7 @@
                             {% endautoescape %}
                         </div>
                     </div>
-                    <div class="card" style="float:right;width: auto;margin-top: 5%;border-radius: 10px;border-width: 1px;border-color: var(--bs-primary);">
+                    <div class="card" style="float:right;width: 50%;margin-top: 5%;border-radius: 10px;border-width: 1px;border-color: var(--bs-primary);">
                         <div class="card-body" style="text-align: center;">
                             <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">BEHAVIORAL TRAITS</h4>
                             {% autoescape off %}

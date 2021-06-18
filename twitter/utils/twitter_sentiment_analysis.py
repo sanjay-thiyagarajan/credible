@@ -81,11 +81,33 @@ def pie_chart(taxonomy,summarized_tweet):
     pull_values = [0 for i in values]
     if len(values) != 0:
         pull_values[values.index(max(values))] = 0.2
-    fig = go.Figure(data=[go.Pie(labels=labels, values=values, textinfo='label',hole=0.45,pull = pull_values, title  = taxonomy.upper())])
-    fig.update_layout(width=650, height=650)
+    fig = go.Figure(data=[go.Pie(labels=labels, values=values, textinfo='label',hole=0.35,pull = pull_values)])
     div = to_html(fig)
     if len(labels) == 0:
         status = 'ERROR'
     else:
         status = 'SUCCESS'
     return div, status
+
+def sentiment_gauge(input_text):
+    client = ExpertAiClient()
+    language= 'en'
+    output = client.specific_resource_analysis(
+        body={"document": {"text": input_text}}, 
+        params={'language': language, 'resource': 'sentiment'}
+    )
+    value = output.sentiment.overall
+    fig = go.Figure(go.Indicator(
+        #domain = {'x': [0, 1], 'y': [0, 1]},
+        value = value,
+        mode = "gauge+number+delta",
+        title = {'text': "Overall sentiment"},
+        delta = {'reference': 0},
+        gauge = {'axis': {'range': [-100, 100]},
+                'threshold' : {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': 0}
+                }
+        )
+    )
+    #fig.update_layout(width=650, height=650)
+    div = to_html(fig)
+    return div

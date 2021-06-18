@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Credible</title>
+    <meta name="description" content="AI powered sentiment analysis">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body style="background: var(--bs-dark);text-align: center;">
+    <nav class="navbar navbar-light navbar-expand-md" style="background: #fef9f9;">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-weight: bold;font-family: Cabin, sans-serif;border-color: rgba(41,39,39,0.9);color: rgba(89,84,84,0.9);">Tweet Analysis</a></div>
+    </nav>
+    <div class="card" style="margin-top: 10%;margin-left: 23%;border-radius: 22px;width: 55%;">
+        <div class="card-body" style="text-align: center;">
+            <h4 class="card-title" style="color: rgb(85,77,77);text-align: center;padding: 2%;font-size: 180%;margin-top: 3%;">SENTIMENT ANALYSIS</h4>
+            <form style="text-align: center;width: 100%" method="post">
+            {% csrf_token %}
+                <div class="input-group" style="width: 100%;height: 20%;text-align: center;margin-top: 3%;min-height: 20%;"><textarea class="form-control" name="input_text" style="height: 100%;width: auto;margin-left: 3%;margin-right: 3%;padding: 5%;min-height: 100%;" placeholder="Paste your text data here to find the sentiments in it"></textarea></div><button class="btn btn-primary" type="submit" style="width: 70%;margin-top: 8%;border-radius: 66px;background: rgb(13,202,240);color: rgb(255,255,255);margin-bottom: 5%;font-size: 120%;height: 5%;max-height: 5%;min-height: 5%;padding: 2%;">ANALYZE</button>
+            </form>
+        </div>
+    </div>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/script.min.js' %}"></script>
+    
+</body>
+
+</html>
