@@ -87,8 +87,14 @@ def pie_chart(taxonomy,summarized_tweet):
         status = 'ERROR'
     else:
         status = 'SUCCESS'
+    behavioral_collection = {}
+    behavioral_ids = []
+    if taxonomy == 'behavioral-traits':
+        for category in output.categories:
+            behavioral_collection[category.id_] = [str(category.hierarchy[-1]),str(category.hierarchy[0]+'/'+category.hierarchy[1]+'/'+category.hierarchy[-1]),str(category.frequency)]
+            behavioral_ids.append(str(category.id_))
+        return div, status, behavioral_collection, behavioral_ids
     return div, status
-
 
 def sentiment_gauge(input_text):
     client = ExpertAiClient()
