@@ -10,6 +10,8 @@ import re
 import plotly.graph_objects as go
 from expertai.nlapi.cloud.client import ExpertAiClient
 from plotly.io import to_html
+from collections import Counter
+import collections
 
 
 
@@ -65,9 +67,7 @@ def findusertweets(user_name):
     tweets = api.user_timeline(screen_name=user_name, count=30, exclude_replies=False, include_retweets=True)
     tweet_analyzer = TweetAnalyzer()
     df = tweet_analyzer.tweets_to_data_frame(tweets)
-    tweets_list = df['tweets']
-    summarized_tweet = '. '.join(tweets_list)
-    return summarized_tweet
+    return df
 
 def pie_chart(taxonomy,summarized_tweet):
     client = ExpertAiClient()
@@ -89,3 +89,38 @@ def pie_chart(taxonomy,summarized_tweet):
     else:
         status = 'SUCCESS'
     return div, status
+
+def no_of_tweets_graph(dates):
+    dates_list = []
+    for i in dates:
+      a,b = str(i).split(' ')
+      dates_list.append(a)
+    dates_list.sort()
+    date_list = []
+    for i in dates_list:
+      a,b,c = i.split('-')
+      date_list.append(c+'-'+b+'-'+a)
+    c = Counter(date_list)
+    y = [int(i) for i in list(c.values())]
+    x = list(c.keys())
+    fig = go.Figure(data=go.Scatter(x=x, y=y))
+    fig.show()
+
+def highest_likes_on_a_day(dates,likes_cnt):
+    likes = {}
+    for i in range(len(dates)):
+      a,b = str(dates[i]).split(' ')
+      if a not in likes.keys():
+        likes[a] = likes_cnt[i]
+      else:
+        if likes[a] < likes_cnt[i]:
+          likes[a] = likes_cnt[i]
+    sorted_likes = collections.OrderedDict(sorted(likes.items()))
+    fig = go.Figure(data=go.Scatter(x=list(sorted_likes.keys()),y=list(sorted_likes.values())))
+    fig.show()
+
+if __name__=='__main__':
+    df = findusertweets('Actor_Siddharth')
+    summary = '. '.join(df['tweets'])
+   no_of_tweets_graph(df['date'])
+    highest_likes_on_a_day(df['date'],df['likes'])
