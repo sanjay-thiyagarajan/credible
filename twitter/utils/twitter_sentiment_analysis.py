@@ -133,6 +133,7 @@ def no_of_tweets_graph(dates):
     y = [int(i) for i in list(c.values())]
     x = list(c.keys())
     fig = go.Figure(data=go.Scatter(x=x, y=y))
+    fig.update_layout(xaxis_title='Tweet Date',yaxis_title='No.of.Tweets')
     div = to_html(fig)
     return div
 
@@ -147,6 +148,7 @@ def highest_likes_on_a_day(dates,likes_cnt):
           likes[a] = likes_cnt[i]
     sorted_likes = collections.OrderedDict(sorted(likes.items()))
     fig = go.Figure(data=go.Scatter(x=list(sorted_likes.keys()),y=list(sorted_likes.values())))
+    fig.update_layout(xaxis_title='Tweet Date',yaxis_title='No.of.Likes')
     div = to_html(fig)
     return div
 
