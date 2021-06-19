@@ -1,4 +1,5 @@
 credible/__pycache__
+credible/settings/.env
 twitter/__pycache__
 twitter/migrations
 reviews/__pycache__
