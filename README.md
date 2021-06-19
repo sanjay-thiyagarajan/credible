@@ -3,6 +3,9 @@
 ### About
 <p> Credible is an integrated platform for enabling the companies to analyse the standard aspects of business model such as Resume Analysis, Customer review analysis, Sentiment analysis on write-ups and consolidated tweet analysis using expert.ai API.</p>
 
+### expert.ai - Natural Language Expertise for Explainable and Practical AI
+<p> Expert.ai empowers organizations to transform data into knowledge and insight through its deep understanding of complex language.</p>
+
 ### Our Servies
 <ul>
   <li>Tweet Analysis - In this, we will be analysing the behavioural traits, emotional traits, tweet frequency, like analysis, sentiment score and interest for that particular twitter username. </li>
