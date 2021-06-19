@@ -1,10 +1,15 @@
 # <img align="left" alt="LOGO" width="40px" src="https://github.com/Techipeeyon/Images/blob/main/icons/logo-removebg-preview.png" /><em>Credible</em> - <em>Your AI companion for the most tedious tasks</em>
 
 ### About
-<p> Credible is an integrated platform for enabling the companies to analyse the standard aspects of business model such as Resume Analysis, Customer review analysis, Sentiment analysis on write-ups and consolidated tweet analysis using expert.ai API.</p>
+<p> Credible is an integrated platform for enabling the companies to analyse the standard aspects of business model such as Resume Analysis, Customer review analysis, Sentiment analysis on write-ups and consolidated tweet analysis using expert.ai Natural Language API.</p>
 
-### expert.ai - Natural Language Expertise for Explainable and Practical AI
-<p> Expert.ai empowers organizations to transform data into knowledge and insight through its deep understanding of complex language.</p>
+### expert.ai Natural Language API
+
+<p>expert.ai Natural Language API is a cloud-based software service providing a comprehensive set of natural language understanding capabilities based on expert.ai technology. </p>
+
+<p>The expert.ai Natural Language API is a cloud-based service with a REST interface. This means that in order to use it a program must be able to access the Web and carry out an HTTP conversation with the API interface.</p>
+
+<p>Whenever the program has to analyze a document, classify a document or detect information inside a document, it must request the most suitable API resource, similarly to what you do when you request the page of a site with a Web browser.</p>
 
 ### Our Servies
 <ul>
