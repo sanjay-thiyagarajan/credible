@@ -43,7 +43,7 @@ From now when you start your work, run ``source bin/activate`` inside the projec
         
 
 
-## Our Elixir
+### Our Elixir
 <img align="left" alt="PostGreSQL" width="60px" src="https://github.com/sanjay-thiyagarajan/credible/blob/master/images/postgresql-sentimen.png" />
 <img align="left" alt="Expert-Ai" width="36px" src="https://github.com/sanjay-thiyagarajan/credible/blob/master/images/expert.ai-sentiment.png" />
 <img align="left" alt="Django" width="36px" src="https://github.com/sanjay-thiyagarajan/credible/blob/master/images/dj_sentiment.png" />
