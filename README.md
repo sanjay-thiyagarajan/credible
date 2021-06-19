@@ -2,6 +2,40 @@
 ## About
 <p> Credible is an integrated platform for enabling the companies to analyse the standard aspects of business model such as Resume Analysis, Customer review analysis, Sentiment analysis on write-ups and consolidated tweet analysis.</p>
 
+## Our Servies
+<ul>
+  <li>Tweet Analysis - In this, we will be analysing the behavioural traits, emotional traits, tweet frequency, like analysis, sentiment score and interest for that particular twitter username. </li>
+  <li>App Review Analysis - </li>
+  <li>Resume Analysis - </li>
+  <li>Sentiment Analysis -</li>
+ </ul>
+ 
+## Installation Instructions
+The portal is primarily a django based application, and to set it up we require to have 
+python environment with django and other project dependencies installed. Though one can
+work with the project without an virtual environment,  it is recommended to use one so 
+as to avoid conflicts with other projects.
+
+0. Make sure that you have `Python 3`, `python-3-devel`, `gcc`, `virtualenv`, and `pip` installed.     
+1. Clone the repository
+
+ ```
+        $ git clone https://github.com/sanjay-thiyagarajan/credible.git
+        $ cd credible
+ ```
+2. Create a python 3 virtualenv, and activate the environment.
+ ```bash
+        $ virtualenv -p python3
+        $ source bin/activate
+ ```   
+3. Install the project dependencies
+    ```
+        $ pip install -r requirements.txt
+    ```
+
+ 
+        
+
 
 ## Our Elixir
 <img align="left" alt="PostGreSQL" width="60px" src="https://github.com/sanjay-thiyagarajan/credible/blob/master/images/postgresql-sentimen.png" />
