@@ -1,8 +1,9 @@
 # <img align="left" alt="LOGO" width="40px" src="https://github.com/sanjay-thiyagarajan/credible/blob/master/images/logo-removebg-preview.png" /><em>Credible</em> - <em>Your AI companion for the most tedious tasks</em>
-## About
+
+### About
 <p> Credible is an integrated platform for enabling the companies to analyse the standard aspects of business model such as Resume Analysis, Customer review analysis, Sentiment analysis on write-ups and consolidated tweet analysis.</p>
 
-## Our Servies
+### Our Servies
 <ul>
   <li>Tweet Analysis - In this, we will be analysing the behavioural traits, emotional traits, tweet frequency, like analysis, sentiment score and interest for that particular twitter username. </li>
   <li>App Review Analysis - </li>
@@ -10,7 +11,7 @@
   <li>Sentiment Analysis -</li>
  </ul>
  
-## Installation Instructions
+### Installation Instructions
 The portal is primarily a django based application, and to set it up we require to have 
 python environment with django and other project dependencies installed. Though one can
 work with the project without an virtual environment,  it is recommended to use one so 
@@ -32,7 +33,12 @@ as to avoid conflicts with other projects.
     ```
         $ pip install -r requirements.txt
     ```
+### After Setting Up
+From now when you start your work, run ``source bin/activate`` inside the project repository and you can work with the django application as usual - 
 
+* `python manage.py migrate` - set up database
+* `python manage.py createsuperuser` - create admin user
+* `python manage.py runserver`  - run the project locally
  
         
 
