@@ -5,9 +5,9 @@
 
 ### expert.ai Natural Language API
 
-<p>expert.ai Natural Language API is a cloud-based software service providing a comprehensive set of natural language understanding capabilities based on expert.ai technology. </p>
+[expert.ai Natural Language API](https://docs.expert.ai/nlapi/latest/) is a cloud-based software service providing a comprehensive set of natural language understanding capabilities based on expert.ai technology.
 
-<p>The expert.ai Natural Language API is a cloud-based service with a REST interface. This means that in order to use it a program must be able to access the Web and carry out an HTTP conversation with the API interface.</p>
+<p> The expert.ai Natural Language API is a cloud-based service with a REST interface. This means that in order to use it a program must be able to access the Web and carry out an HTTP conversation with the API interface.</p>
 
 <p>Whenever the program has to analyze a document, classify a document or detect information inside a document, it must request the most suitable API resource, similarly to what you do when you request the page of a site with a Web browser.</p>
 
