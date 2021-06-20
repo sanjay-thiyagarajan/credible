@@ -88,7 +88,7 @@ def extract_skills(resume_text):
     tokens = [token.text for token in nlp_text if not token.is_stop]
     
     # reading the csv file
-    data = pd.read_csv("https://raw.githubusercontent.com/cognizance2020/cognizance_cms/master/skills.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/TechieNK/Hacks/blob/main/skills.csv")
     
     # extract values
     skills = list(data.columns.values)
