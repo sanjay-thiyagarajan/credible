@@ -11,7 +11,7 @@ def analysis(request):
             result = fetchreviews(applink)
             cleaned_reviews = [clean_review(review) for review in result['comments']]
             summary = '. '.join(cleaned_reviews)
-            review_pie_div = sentiment_gauge(summary)
+            review_pie_div = sentiment_gauge(summary[:10000])
             histo_div = histo_graph(result['histogram'])
             bt_div = pie_chart('behavioral-traits',summary[:10000])
             em_div = pie_chart('emotional-traits',summary[:10000])
