@@ -31,14 +31,7 @@ def Review_pie(cleaned_reviews):
   return div
 
 def histo_graph(result):
-  sizes = np.divide(result, 700)
-  fig = go.Figure(data=go.Scatter(x=[1,2,3,4,5],y=result, 
-  mode="markers",
-  marker=dict(
-        color=list(sizes),
-        showscale=False,
-  size=list(sizes))
-  ))
+  fig = go.Figure(data=go.Scatter(x=[1,2,3,4,5],y=result))
   fig.update_layout(xaxis_title='Ratings',yaxis_title='No.of.Users')
   div = to_html(fig)
   return div
