@@ -19,6 +19,12 @@
   <li>Sentiment Analysis -</li>
  </ul>
  
+### APIs used
+<ul>
+  <li><b>Tweepy API</b> - Tweepy is an open source Python package that gives you a very convenient way to access the Twitter API with Python. Tweepy includes a set of classes and methods that represent Twitter's models and API endpoints, and it transparently handles various implementation details, such as: Data encoding and decoding.</li>
+  <li><b>Google Play API</b> - The Google Play Developer API is a REST-based web service that allows you to perform publishing and app-management tasks. You can use this API to integrate your publishing operations with your release-management process.</li>
+ </ul>
+ 
 ### Installation Instructions
 The portal is primarily a django based application, and to set it up we require to have 
 python environment with django and other project dependencies installed. Though one can
