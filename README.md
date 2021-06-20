@@ -49,13 +49,15 @@ From now when you start your work, run ``source bin/activate`` inside the projec
 * `python manage.py runserver`  - run the project locally
  
         
+----
 
+### Our Elixir  
 
-### Our Elixir
-<img align="left" alt="PostGreSQL" width="60px" src="https://github.com/Techipeeyon/Images/blob/main/icons/postgresql-sentimen.png" />
-<img align="left" alt="Expert-Ai" width="36px" src="https://github.com/Techipeeyon/Images/blob/main/icons/expert.ai-sentiment.png" />
-<img align="left" alt="Django" width="36px" src="https://github.com/Techipeeyon/Images/blob/main/icons/dj_sentiment.png" />
-
+  
+<img align="left" alt="Expert-Ai" width="auto" height="100px" src="https://mma.prnewswire.com/media/1283900/Expert_ai_Logo.jpg?p=facebook" />
+<img align="left" alt="PostGreSQL" width="auto" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Plotly-logo-01-square.png/1200px-Plotly-logo-01-square.png" />
+<img align="left" alt="Django" width="auto" height="100px" src="https://www.djangoproject.com/m/img/logos/django-logo-positive.png" />  
+  
 
 
 
