@@ -14,6 +14,9 @@
 ### Our Servies
 <ul>
   <li>Tweet Analysis - In this, we will be analysing the behavioural traits, emotional traits, tweet frequency, like analysis, sentiment score and interest for that particular twitter username. </li>
+  <br>
+  <img src="https://github.com/Techipeeyon/Images/blob/main/icons/ta.png" height="300" width="800">
+  <br>
   <li>App Review Analysis - </li>
   <li>Resume Analysis - </li>
   <li>Sentiment Analysis -</li>
