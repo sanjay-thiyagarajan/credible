@@ -96,7 +96,7 @@ def pie_chart(taxonomy,summarized_tweet):
         return div, status, behavioral_collection, behavioral_ids
     return div, status
 
-def sentiment_gauge(input_text):
+def sentiment_gauge(input_text, width=None,height=None):
     client = ExpertAiClient()
     language= 'en'
     output = client.specific_resource_analysis(
@@ -115,7 +115,8 @@ def sentiment_gauge(input_text):
                 }
         )
     )
-    #fig.update_layout(width=650, height=650)
+    if width != None and height != None:
+        fig.update_layout(width=width, height=height)
     div = to_html(fig)
     return div
 
