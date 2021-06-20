@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Credible</title>
+    <meta name="description" content="AI powered sentiment analysis">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body style="background: var(--bs-dark);">
+    <nav class="navbar navbar-light navbar-expand-md" style="background: #ffffff;height: 8%;">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-weight: bold;color: rgba(82,78,78,0.9);font-family: Cabin, sans-serif;font-size: 160%;">Tweet Analysis</a><button class="navbar-toggler" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+    </nav>
+
+    <div class="card" style="margin-left: 10%; margin-right:10%; margin-top: 3%; margin-bottom: 10%;border-radius: 13px;">
+        <div class="card-body" style="padding: 5%;">
+            <h4 class="card-title" style="color: rgb(145,142,142);text-align: center;font-size: 200%;font-weight: bold;">analysis report</h4>
+            <p style="color: grey;text-align: center;font-size: 160%;font-weight: bold; margin-top:1%;">Showing results for "{{appname}}"</p>
+                {% if error %}
+                    <p style="color: red; font-weight: bold; border-style: solid; padding: 2%; margin-top: 3%; border-width: 1px; border-radius: 6px;">{{error}}</p>
+                {% endif %}
+                <div>
+                    <p>Showing results for "{{appname}}"</p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="background: transparent;border-radius: 16px;">
+                                <div class="card-body" style="background: var(--bs-warning);border-radius: 14px;padding: 4%;height: 100%;">
+                                    <h4 class="card-title" style="color: rgb(74,69,69);text-align: center;font-size: 150%;">DOWLOADS</h4>
+                                    <p style="text-align: center;font-size: 150%;padding: 2%;margin-bottom: 0px;">{{downloads}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="height: 100%;border-radius: 23px;background: rgb(198,254,184);">
+                                <div class="card-body" style="padding: 4%;height: 100%;">
+                                    <h4 class="card-title" style="color: rgb(72,69,69);text-align: center;font-size: 150%;">GENRE</h4>
+                                    <p style="color: rgb(28,63,116);text-align: center;padding: 2%;margin-bottom: 0px;font-size: 150%;">{{genre}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card" style="float:left;width: 50%;margin-top: 5%;border-radius: 9px;border-color: var(--bs-red);">
+                            <div class="card-body" style="text-align: center;">
+                                <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">RATINGS</h4>
+                                {% autoescape off %}
+                                {{histo_div}}
+                                {% endautoescape %}
+                            </div>
+                        </div>
+                        <div class="card" style="float:right;width: 50%;margin-top: 5%;border-radius: 10px;border-width: 1px;border-color: var(--bs-primary);">
+                            <div class="card-body" style="text-align: center;">
+                                <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">REVIEWS FIGURE</h4>
+                                {% autoescape off %}
+                                    {{rev_div}}
+                                {% endautoescape %}
+                            </div>
+                        </div>
+                        <div class="card" style="float:left;width: 50%;border-radius: 10px;border-width: 1px;border-color: var(--bs-primary);">
+                            <div class="card-body" style="text-align: center;">
+                                <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">BEHAVIORAL ANALYSIS</h4>
+                                {% autoescape off %}
+                                    {{bt_div}}
+                                {% endautoescape %}
+                            </div>
+                        </div>
+                        <div class="card" style="float:right;width: 50%;border-radius: 10px;border-width: 1px;border-color: var(--bs-primary);">
+                            <div class="card-body" style="text-align: center;">
+                                <h4 class="card-title" style="color: rgb(95,91,91);margin-top: 2%;margin-left: 2%;margin-bottom: 2%;">EMOTIONAL ANALYSIS</h4>
+                                {% autoescape off %}
+                                    {{em_div}}
+                                {% endautoescape %}
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <br>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/script.min.js' %}"></script>
+    
+</body>
+
+</html>

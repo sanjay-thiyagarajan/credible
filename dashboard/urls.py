@@ -5,5 +5,6 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('twitter/', include('twitter.urls')),
     path('resume/', include('resume.urls')), 
-    path('personality/', include('personality.urls'))
+    path('personality/', include('personality.urls')),
+    path('app-review/', include('reviews.urls'))
 ]
