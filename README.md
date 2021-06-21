@@ -25,7 +25,13 @@
   <img src ="https://github.com/Techipeeyon/Images/blob/main/icons/appreive.png" height="300" width="800">
   <br>
   <li>Resume Analysis - In this, we will be analysing the IPTC traits, behavioural traits, overall sentiment, information extraction from a particular resume doc or the link to the resume. </li>
+  <br>
+  <img src ="https://github.com/Techipeeyon/Images/blob/main/icons/resume%20analysis.png" height="300" width="800">
+  <br>
   <li>Sentiment Analysis - In this, we will be analysisng the behavioural traits, emotional traits, IPTC and sentiment analysis for a particular text.</li>
+  <br>
+  <img src="https://github.com/Techipeeyon/Images/blob/main/icons/sentimental%20analysis.png" height="300" width="800">
+  <br>
  </ul>
  
 ### APIs used
