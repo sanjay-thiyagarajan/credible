@@ -23,8 +23,8 @@
     <div class="card" style="margin-left: 10%; margin-right:10%; margin-top: 3%; margin-bottom: 10%;border-radius: 13px;">
         <div class="card-body" style="padding: 5%;">
             <h4 class="card-title" style="color: rgb(145,142,142);text-align: center;font-size: 200%;font-weight: bold;">analysis report</h4>
-            <p style="color: grey;text-align: center;font-size: 160%;font-weight: bold; margin-top:1%;">Showing results for "<a href="https://twitter.com/{{username}}">@{{username}}</a>"</p>
             {% if error %}
+                <p style="color: grey;text-align: center;font-size: 160%;font-weight: bold; margin-top:1%;">Showing results for "<a href="https://twitter.com/{{username}}">@{{username}}</a>"</p>
                 <p style="color: red; font-weight: bold; border-style: solid; padding: 2%; margin-top: 3%; border-width: 1px; border-radius: 6px;">{{error}}</p>
             {% elif bt_div %}
                 <div>
