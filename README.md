@@ -1,4 +1,7 @@
-# <img align="left" alt="LOGO" width="40px" src="https://github.com/Techipeeyon/Images/blob/main/icons/logo-removebg-preview.png" /><em>Credible</em> - <em>Your AI companion for the most tedious tasks</em>
+# <img align="left" alt="LOGO" width="40px" src="https://github.com/Techipeeyon/Images/blob/main/icons/logo-removebg-preview.png" /><em>Credible</em> - <em>Your AI companion for the most tedious tasks</em>  
+
+### Screenshots  
+<img src = "https://user-images.githubusercontent.com/42594454/122702085-4ae8be00-d26c-11eb-96db-3852d51cc6d8.png" width="210px" height="175px"><img src = "https://user-images.githubusercontent.com/42594454/122702229-8be0d280-d26c-11eb-93fd-e9393fbe2b9c.png" width="250px" height="175px"><img src = "https://user-images.githubusercontent.com/42594454/122702293-b29f0900-d26c-11eb-8cf8-a330c8ba541a.png" width="250px" height="175px"><img src="https://user-images.githubusercontent.com/42594454/122702344-d6fae580-d26c-11eb-873c-226ae0107b6f.png" width="250px" height="175px">
 
 ### About
 <p> Credible is an integrated platform for enabling the companies to analyse the standard aspects of business model such as Resume Analysis, Customer review analysis, Sentiment analysis on write-ups and consolidated tweet analysis using expert.ai Natural Language API.</p>
