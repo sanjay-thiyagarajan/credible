@@ -21,6 +21,9 @@
   <img src="https://github.com/Techipeeyon/Images/blob/main/icons/ta.png" height="300" width="800">
   <br>
   <li>App Review Analysis - In this, we will be analysing the behavioural traits, emotional traits, no.of.downloads, genre, rating and review ratings for that for that playstore link. </li>
+  <br>
+  <img src ="https://github.com/Techipeeyon/Images/blob/main/icons/appreive.png" height="300" width="800">
+  <br>
   <li>Resume Analysis - In this, we will be analysing the IPTC traits, behavioural traits, overall sentiment, information extraction from a particular resume doc or the link to the resume. </li>
   <li>Sentiment Analysis - In this, we will be analysisng the behavioural traits, emotional traits, IPTC and sentiment analysis for a particular text.</li>
  </ul>
