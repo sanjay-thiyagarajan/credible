@@ -28,5 +28,5 @@ def analysis(request):
                 }
                 return render(request, 'reviews/app-results.html', data)
             except :
-                return render(request,'reviews/app-results.html', {'error': "We're sorry, the requested URL was not found Please check and reach back"} )
+                return render(request,'reviews/app-results.html', {'error': "We're sorry, the requested URL was not found. Please check and reach back."} )
     return render(request, 'reviews/app-analysis.html')

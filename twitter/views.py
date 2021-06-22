@@ -16,11 +16,11 @@ def analysis(request):
                 iptc_div, iptc_status = pie_chart('iptc', summary[:10000])
                 sent_div = sentiment_gauge(summary[:10000])
                 if bt_status == 'ERROR' or em_status == 'ERROR' or iptc_status == 'ERROR':
-                    return render(request, 'twitter/tweet-results.html', {'error': 'Sorry :( We don\'t have enough information to run the prediction for this username'})
+                    return render(request, 'twitter/tweet-results.html', {'error': 'Sorry :( We don\'t have enough information to run the prediction for this username.'})
                 else:
                     return render(request, 'twitter/tweet-results.html', {'bt_div':bt_div, 'em_div':em_div, 'g1_div':g1_div, 'g2_div':g2_div, 'iptc_div':iptc_div, 'sent_div':sent_div, 'username':username, 'bt_dict':bt_dict, 'bt_ids':bt_ids})
             except tweepy.TweepError as e:
-                return render(request, 'twitter/tweet-results.html', {'error': 'Sorry :( The provided username doesn\'t exist. Please check and reach back'})        
+                return render(request, 'twitter/tweet-results.html', {'error': 'Sorry :( The provided username doesn\'t exist. Please check and reach back.'})        
                 
     return render(request, 'twitter/tweet-analysis.html')
 

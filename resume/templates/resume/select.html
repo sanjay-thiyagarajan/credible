@@ -26,7 +26,11 @@
                     <p style="color: rgb(97,98,101);">Choose resume from your computer</p><input type="file" name="file_input">
                 </div>
                 <hr style="margin-top: 40px;">
-                <p>OR</p><input type="url" name="url_input" style="width: 80%;height: 50px;padding: 10px;border-radius: 15px;border: 2px solid rgb(3,85,11);margin-left: 10%;margin-right: 10%;" placeholder="Provide the link to the resume here"><button class="btn btn-primary" type="submit" style="margin-top: 35px;background: #32373d;border-color: transparent;border-radius: 9px;padding: 10px;width: 25%;margin-bottom: 20px;">Analyze</button>
+                <p>OR</p><input type="url" name="url_input" style="width: 80%;height: 50px;padding: 10px;border-radius: 15px;border: 2px solid rgb(3,85,11);margin-left: 10%;margin-right: 10%;" placeholder="Provide the link to the resume here">
+            {% if error %}
+                <p style="color: red; font-weight: bold; border-style: solid; padding: 2%; margin-top: 3%; border-width: 1px; border-radius: 6px;">{{error}}</p>
+            {% endif %}
+<button class="btn btn-primary" type="submit" style="margin-top: 35px;background: #32373d;border-color: transparent;border-radius: 9px;padding: 10px;width: 25%;margin-bottom: 20px;">Analyze</button>
             </form>
         </div>
     </div>

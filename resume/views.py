@@ -9,7 +9,7 @@ def resume_analysis(request):
         url_input = request.POST.get('url_input')
         file_input = request.FILES.get('file_input')
         if (url_input == '') and (file_input == ''):
-            return render(request, 'resume/select.html', {'error': 'Please choose the image in either of the two formats'})
+            return render(request, 'resume/select.html', {'error': 'Please choose the image in either of the two formats.'})
         else:
             input_file = None
             extracted_text = None
@@ -20,10 +20,16 @@ def resume_analysis(request):
             if url_input or file_input:
                 if url_input:
                     input_file = requests.get(url_input, stream=True)
-                    extracted_text = extract_text(io.BytesIO(input_file.content))
+                    try:
+                        extracted_text = extract_text(io.BytesIO(input_file.content))
+                    except:
+                        return render(request, 'resume/select.html', {'error': "We're sorry, we don't find any PDF. Please check and reach back"})
                 elif file_input:
                     input_file = file_input
-                    extracted_text = extract_text(io.BytesIO(input_file.read()))
+                    try:
+                        extracted_text = extract_text(io.BytesIO(input_file.read()))
+                    except:
+                        return render(request, 'resume/select.html', {'error': "We're sorry, we don't find any PDF. Please check and reach back."})
                 name = extract_name(extracted_text)
                 education = extract_education(extracted_text)
                 email = extract_email(extracted_text)
@@ -48,5 +54,5 @@ def resume_analysis(request):
                     }
                 return render(request, 'resume/resume-results.html',{'data':data, 'div_data': div_data})
             else:
-                return render(request, 'resume/select.html', {'error': 'Please choose the resume in either of the two formats'})                                
+                return render(request, 'resume/select.html', {'error': 'Please choose the resume in either of the two formats.'})                                
     return render(request, 'resume/select.html') 
