@@ -1,4 +1,4 @@
-# <img align="left" alt="LOGO" width="40px" src="https://github.com/Techipeeyon/Images/raw/main/icons/logo-removebg-preview.png" /><em>Credible</em> - <em>Your AI companion for the most tedious tasks</em>  
+# <img align="left" alt="LOGO" width="40px" src="https://raw.githubusercontent.com/Techipeeyon/Images/main/icons/logo-removebg-preview.png" /><em>Credible</em> - <em>Your AI companion for the most tedious tasks</em>  
 
 ### Screenshots  
 <img src = "https://user-images.githubusercontent.com/42594454/122702085-4ae8be00-d26c-11eb-96db-3852d51cc6d8.png" width="250px" height="175px"><img src = "https://user-images.githubusercontent.com/42594454/122702229-8be0d280-d26c-11eb-93fd-e9393fbe2b9c.png" width="250px" height="175px"><img src = "https://user-images.githubusercontent.com/42594454/122702293-b29f0900-d26c-11eb-8cf8-a330c8ba541a.png" width="250px" height="175px"><img src="https://user-images.githubusercontent.com/42594454/122702344-d6fae580-d26c-11eb-873c-226ae0107b6f.png" width="250px" height="175px"><img src="https://user-images.githubusercontent.com/42594454/122702903-0d853000-d26e-11eb-91ba-9c66e6b33a53.png" width="250px" height="175px"><img src="https://user-images.githubusercontent.com/42594454/122702931-1d9d0f80-d26e-11eb-9445-877f961287f7.png" width="250px" height="175px">  
@@ -17,23 +17,23 @@ YouTube : https://youtu.be/kQMVIlf9WfM
 
 <p>When we need to analyze, classify or detect information inside a document, it must request for the most suitable API resource, similar to how requests for a website from a web browser are handled</p>
 
-### Our Servies
+### Our Services
 <ul>
   <li>Tweet Analysis - In this, we will be analysing the behavioural traits, emotional traits, tweet frequency, like analysis, sentiment score and interest for that particular twitter username. </li>
   <br>
-  <img src="https://github.com/Techipeeyon/Images/raw/main/icons/ta.png" height="300" width="800">
+  <img src="https://raw.githubusercontent.com/Techipeeyon/Images/main/icons/ta.png" height="300" width="800">
   <br>
   <li>App Review Analysis - In this, we will be analysing the behavioural traits, emotional traits, no.of.downloads, genre, rating and review ratings for that for that playstore link. </li>
   <br>
-  <img src ="https://github.com/Techipeeyon/Images/raw/main/icons/appreive.png" height="300" width="800">
+  <img src ="https://raw.githubusercontent.com/Techipeeyon/Images/main/icons/appreive.png" height="300" width="800">
   <br>
   <li>Resume Analysis - In this, we will be analysing the IPTC traits, behavioural traits, overall sentiment, information extraction from a particular resume doc or the link to the resume. </li>
   <br>
-  <img src ="https://github.com/Techipeeyon/Images/raw/main/icons/resume%20analysis.png" height="300" width="800">
+  <img src ="https://raw.githubusercontent.com/Techipeeyon/Images/main/icons/resume%20analysis.png" height="300" width="800">
   <br>
   <li>Sentiment Analysis - In this, we will be analysisng the behavioural traits, emotional traits, IPTC and sentiment analysis for a particular text.</li>
   <br>
-  <img src="https://github.com/Techipeeyon/Images/raw/main/icons/sentimental%20analysis.png" height="300" width="800">
+  <img src="https://raw.githubusercontent.com/Techipeeyon/Images/main/icons/sentimental%20analysis.png" height="300" width="800">
   <br>
  </ul>
  
