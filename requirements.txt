@@ -10,7 +10,7 @@ click==7.1.2
 cryptography==3.4.7
 cycler==0.10.0
 cymem==2.0.5
-Django==3.2.4
+Django==3.2.11
 django-cors-headers==3.7.0
 django-environ==0.4.5
 django-storages==1.11.1
