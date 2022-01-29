@@ -29,7 +29,7 @@ MarkupSafe==2.0.1
 matplotlib==3.4.2
 murmurhash==1.0.5
 nltk==3.6.6
-numpy==1.20.3
+numpy==1.21.0
 oauthlib==3.1.1
 packaging==20.9
 pandas==1.2.4
